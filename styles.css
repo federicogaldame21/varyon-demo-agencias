@@ -250,3 +250,12 @@ td.actions .btn + .btn { margin-left: 6px; }
 .pp-p { font-size: 12px; opacity: .7; padding: 0 10px 10px; }
 .pp[aria-pressed="true"] { border-color: var(--brand); box-shadow: 0 0 0 3px var(--brand-soft); }
 .voucher-foto { width: 100%; aspect-ratio: 16 / 7; object-fit: cover; display: block; }
+
+/* ---------- Ajuste móvil: nada se desborda del ancho de pantalla ---------- */
+.coord > *, .coord main, .sidebar { min-width: 0; }
+@media (max-width: 760px) {
+  .coord { grid-template-columns: minmax(0, 1fr); }
+  .nav { max-width: 100%; -webkit-overflow-scrolling: touch; }
+  .filters input { min-width: 0; width: 100%; }
+  .tablewrap td:first-child, .tablewrap th:first-child { white-space: nowrap; }
+}
