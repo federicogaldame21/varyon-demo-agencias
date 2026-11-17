@@ -2,7 +2,7 @@
    Simula en el navegador lo que en el proyecto real resuelve la base de datos
    (procedimientos, triggers y eventos). Sin backend: el estado vive en localStorage. */
 
-const CASO_URL = "https://varyon.com.ar/";      // cambiar por la URL del caso de estudio
+const CASO_URL = "https://varyon.com.ar/proyectos/agencias"; // caso de estudio en la web de Varyon
 const KEY = "cumbrera-demo-v1";
 const KEY_ROL = "cumbrera-demo-rol";
 const VENDEDOR = "e2";      // Tomás, el vendedor con el que se prueba la vista móvil
